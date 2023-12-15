@@ -1,7 +1,7 @@
 <?php
 require('bd.php');
-$consulta = "SELECT * FROM VistaPersonas";
-$resultado = mysqli_query($conn, $consulta) or die('Problema con la BDD');
+// $consulta = "SELECT * FROM VistaPersonas";
+// $resultado = mysqli_query($conn, $consulta) or die('Problema con la BDD');
 ?>
 
 <!DOCTYPE html>
@@ -97,22 +97,12 @@ $resultado = mysqli_query($conn, $consulta) or die('Problema con la BDD');
 
         <div class="row justify-content-center">
             <div class="col-md-6">
-                <label for="nombreP" class="form-label">Primer nombre:</label>
+                <label for="nombreP" class="form-label">Nombre:</label>
                 <input type="text" id="nombreP" name="nombreP" class="form-control" required>
             </div>
+     
             <div class="col-md-6">
-                <label for="nombreS" class="form-label">Segundo nombre:</label>
-                <input type="text" id="nombreS" name="nombreS" class="form-control" required>
-            </div>
-        </div>
-
-        <div class="row mb-3">
-            <div class="col-md-6">
-                <label for="apellidoP" class="form-label">Primer Apellido:</label>
-                <input type="text" id="apellidoP" name="apellidoP" class="form-control" required>
-            </div>
-            <div class="col-md-6">
-                <label for="apellidoS" class="form-label">Segundo Apellido:</label>
+                <label for="apellidoS" class="form-label">Apellido:</label>
                 <input type="text" id="apellidoS" name="apellidoS" class="form-control" required>
             </div>
         </div>

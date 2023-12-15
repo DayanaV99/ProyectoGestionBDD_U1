@@ -31,7 +31,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     // Cerrar la conexión
     $conn->close();
-    header("location: administrarPersonas.php");
+    header("location: administrarNiños.php");
 
 }
 ?>
